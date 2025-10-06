@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #0b4977;
+  color: white;
+}
+
+.logo img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+.navbar nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+/* Hero */
+
+.hero {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: url("C:\Users\ASUS\Documents\keliling sumut html\landing page.jpg") center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.hero-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-content button {
+  padding: 10px 20px;
+  border: none;
+  background: #ffffff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Section */
+.section {
+  padding: 40px 30px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* Grids */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card span {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px black;
+}
+
+.card.small img {
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Artikel Section */
+.artikel-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+.artikel-card.besar img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.artikel-list .artikel-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.artikel-item img {
+  border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+  background: #0b4977;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .hero {
+    height: 40vh;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .artikel-container {
+    grid-template-columns: 1fr;
+  }
+}
